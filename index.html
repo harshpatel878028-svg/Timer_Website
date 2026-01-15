@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dhingu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+   <audio id="sfx-tick" src="assets/tick.mp3" preload="auto"></audio>
+
+    <div id="gate-screen">
+        <div class="gate-content">
+            <h2 class="gate-text">A story is waiting...</h2>
+            <button id="start-btn">Begin Journey</button>
+        </div>
+    </div>
+
+    <div id="timer-screen" class="hidden">
+        <div class="timer-container">
+            <div class="timer-label">Counting down to the moment</div>
+
+            <div class="clock-wrapper">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Mins</span>
+                </div>
+                <div class="colon">:</div>
+
+                <div class="time-box sec-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Secs</span>
+                </div>
+            </div>
+
+            <div id="wait-msg">"Worth every second..."</div>
+        </div>
+    </div>
+
+    <audio id="sfx-tick" src="assets/tick.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
